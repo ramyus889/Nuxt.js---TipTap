@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import IndexCard from "~/pageComponents/indexComponents/IndexCard.vue";
-import IndexMain from "~/pageComponents/indexComponents/IndexMain.vue";
+import IndexCard from "./pageComponents/indexComponents/IndexCard.vue";
+import IndexMain from "./pageComponents/indexComponents/IndexMain.vue";
 </script>
 
 <template>
