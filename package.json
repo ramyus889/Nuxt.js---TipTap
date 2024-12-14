@@ -17,6 +17,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.2.8",
+    "@iconify-json/svg-spinners": "^1.2.1",
     "@iconify-json/uil": "^1.2.1"
   }
 }

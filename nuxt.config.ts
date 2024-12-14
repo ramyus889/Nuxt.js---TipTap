@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/icon"],
   icon: {
     serverBundle: {
-      collections: ["uil"],
+      collections: ["uil", "devicon", "svg-spinners"],
     },
   },
 });
