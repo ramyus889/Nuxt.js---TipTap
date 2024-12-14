@@ -23,6 +23,10 @@
     "@iconify-json/devicon": "^1.2.8",
     "@iconify-json/svg-spinners": "^1.2.1",
     "@iconify-json/uil": "^1.2.1",
-    "@primevue/nuxt-module": "^4.2.5"
+    "@primevue/nuxt-module": "^4.2.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-motion": "^1.0.0"
   }
 }

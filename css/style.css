@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .UserCard {
   display: inline-flex;
   gap: 20px;

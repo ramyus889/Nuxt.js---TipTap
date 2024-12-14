@@ -7,7 +7,8 @@
       <Button label="Button" icon="pi pi-home" />
       <UseButton
         label="UseButton"
-        motionClick="motion-preset-pulse"
+        outline="outline-blue"
+        motionClick="motion-preset-confetti"
         icon="pi pi-chevron-right"
       />
     </div>
