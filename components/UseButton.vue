@@ -21,7 +21,7 @@ const props = defineProps({
   icon: { type: String, default: "" },
   href: { type: String, default: null },
   size: { type: String, default: "medium" },
-  label: { type: String, default: "Button" },
+  label: { type: String, default: "" },
   outline: { type: String, default: "" },
   iconPos: { type: String, default: "left" },
   loading: { type: Boolean, default: false },
