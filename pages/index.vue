@@ -5,6 +5,12 @@ const count = ref(0);
 <template>
   <div class="inline-flex flex-col gap-2">
     <div class="">Frontend count: {{ count }}</div>
-    <UseButton label="Click" motion-animate="m-p-wobble" @click="count++" />
+    <UseButton
+      label="Click"
+      motion-animate="m-p-wobble"
+      bg-color="bg-green"
+      size="large"
+      @click="count++"
+    />
   </div>
 </template>

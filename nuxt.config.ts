@@ -1,26 +1,20 @@
-import Aura from "@primevue/themes/aura";
-
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-
-  modules: [
-    "@nuxt/icon",
-    "@primevue/nuxt-module",
-    "vuetify-nuxt-module",
-  ],
-  css: ["primeicons/primeicons.css", "./css/style.css"],
-  primevue: {
-    options: {
-      theme: {
-        preset: Aura,
-      },
+  modules: ["vuetify-nuxt-module"],
+  css: ["./css/style.css"],
+  vuetify: {
+    moduleOptions: {
+      /* module specific options */
     },
-  },
-  icon: {
-    serverBundle: {
-      collections: ["uil", "devicon", "svg-spinners"],
+    vuetifyOptions: {
+      theme: {
+        defaultTheme: "dark",
+      },
+      icons: {
+        defaultSet: "mdi",
+        sets: ["mdi", "fa"],
+      },
     },
   },
   postcss: {

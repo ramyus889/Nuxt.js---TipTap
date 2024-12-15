@@ -9,21 +9,9 @@
         </div>
         <ul class="hidden gap-5 md:flex lg:gap-11">
           <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li>
-            <NuxtLink to="/UseRestApi">UseRestApi</NuxtLink>
-          </li>
         </ul>
         <div class="hidden gap-3 md:flex">
-          <UseButton
-            icon="pi pi-user"
-            outline="outline-white"
-            label="SIGN IN"
-          />
-          <UseButton
-            outline="outline-white"
-            icon="pi pi-download"
-            label="DOWNLOAD"
-          />
+          <v-btn>Click</v-btn>
         </div>
       </div>
     </div>

@@ -34,7 +34,6 @@ const props = defineProps({
   loadingIcon: { type: String, default: "pi pi-spinner pi-spin" },
   textPosition: { type: String, default: "" },
   motionAnimate: { type: String, default: "" },
-  variant: { type: String, default: "default" },
 });
 
 const emit = defineEmits(["click"]);
@@ -103,14 +102,6 @@ const motionClasses = {
   "m-p-oscillate": "motion-preset-oscillate",
 };
 
-const variantClasses = {
-  default: "",
-  primary: "bg-blue-500 text-white",
-  secondary: "bg-gray-500 text-white",
-  success: "bg-green-500 text-white",
-  danger: "bg-red-500 text-white",
-};
-
 const computedButtonClass = computed(() => {
   const colorClasses = {
     "bg-red": "bg-red-500 text-black font-semibold",
@@ -129,32 +120,37 @@ const computedButtonClass = computed(() => {
 
   const outlineClasses = {
     "outline-red": "border border-red-500 text-red-500 bg-transparent",
-    "outline-blue": "border border-blue-500 text-blue-500 bg-transparent",
-    "outline-green": "border border-green-500 text-green-500 bg-transparent",
-    "outline-yellow": "border border-yellow-500 text-yellow-500 bg-transparent",
-    "outline-purple": "border border-purple-500 text-purple-500 bg-transparent",
-    "outline-grayBlack": "border border-gray-500 text-gray-500 bg-transparent",
-    "outline-grayWhite": "border border-gray-500 text-gray-500 bg-transparent",
-    "outline-black": "border border-black text-black bg-transparent",
-    "outline-white": "border border-white text-white bg-transparent",
-    "outline-orange": "border border-orange-500 text-orange-500 bg-transparent",
-    "outline-pink": "border border-pink-500 text-pink-500 bg-transparent",
-    "outline-cyan": "border border-cyan-500 text-cyan-500 bg-transparent",
+    "outline-blue": "border !border-blue-500 !text-blue-500 bg-transparent",
+    "outline-green": "border !border-green-500 !text-green-500 bg-transparent",
+    "outline-yellow":
+      "border !border-yellow-500 !text-yellow-500 bg-transparent",
+    "outline-purple":
+      "border !border-purple-500 !text-purple-500 bg-transparent",
+    "outline-grayBlack":
+      "border !border-gray-500 !text-gray-500 bg-transparent",
+    "outline-grayWhite":
+      "border !border-gray-500 !text-gray-500 bg-transparent",
+    "outline-black": "border !border-black text-black bg-transparent",
+    "outline-white": "border !border-white text-white bg-transparent",
+    "outline-orange":
+      "border !border-orange-500 !text-orange-500 bg-transparent",
+    "outline-pink": "border !border-pink-500 !text-pink-500 bg-transparent",
+    "outline-cyan": "border !border-cyan-500 !text-cyan-500 bg-transparent",
   };
 
   const textClasses = {
-    "text-red": "border-none text-red-500 bg-transparent",
-    "text-blue": "border-none text-blue-500 bg-transparent",
-    "text-green": "border-none text-green-500 bg-transparent",
-    "text-yellow": "border-none text-yellow-500 bg-transparent",
-    "text-purple": "border-none text-purple-500 bg-transparent",
-    "text-grayBlack": "border-none text-gray-500 bg-transparent",
-    "text-grayWhite": "border-none text-gray-500 bg-transparent",
+    "text-red": "border-none !text-red-500 bg-transparent",
+    "text-blue": "border-none !text-blue-500 bg-transparent",
+    "text-green": "border-none !text-green-500 bg-transparent",
+    "text-yellow": "border-none !text-yellow-500 bg-transparent",
+    "text-purple": "border-none !text-purple-500 bg-transparent",
+    "text-grayBlack": "border-none !text-gray-500 bg-transparent",
+    "text-grayWhite": "border-none !text-gray-500 bg-transparent",
     "text-black": "border-none text-black bg-transparent",
     "text-white": "border-none text-white bg-transparent",
-    "text-orange": "border-none text-orange-500 bg-transparent",
-    "text-pink": "border-none text-pink-500 bg-transparent",
-    "text-cyan": "border-none text-cyan-500 bg-transparent",
+    "text-orange": "border-none !text-orange-500 bg-transparent",
+    "text-pink": "border-none !text-pink-500 bg-transparent",
+    "text-cyan": "border-none !text-cyan-500 bg-transparent",
   };
 
   return `
@@ -168,7 +164,6 @@ const computedButtonClass = computed(() => {
       ${roundedClasses[props.rounded] || roundedClasses.md}
       ${isDisabled.value ? "opacity-50 cursor-not-allowed" : ""}
       ${textPositionClasses[props.textPosition] || ""}
-      ${variantClasses[props.variant] || ""}
       ${props.buttonClass}
     `;
 });
