@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
 
-  modules: ["@nuxt/icon", "@primevue/nuxt-module"],
+  modules: [
+    "@nuxt/icon",
+    "@primevue/nuxt-module",
+    "vuetify-nuxt-module",
+  ],
   css: ["primeicons/primeicons.css", "./css/style.css"],
   primevue: {
     options: {
