@@ -1,19 +1,51 @@
 <template>
-  <div class="fixed z-50 flex w-full top-4 lg:top-6 place-content-center">
-    <div
-      class="max-w-[1672px] px-6 w-full bg-black py-2 rounded-[14px] sm:mx-10 mx-5"
-    >
-      <div class="flex items-center justify-between">
-        <div class="text-xl font-bold">
-          <a href="#" class="">@VueUse</a>
-        </div>
-        <ul class="hidden gap-5 md:flex lg:gap-11">
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-        </ul>
-        <div class="hidden gap-3 md:flex">
-          <v-btn>Click</v-btn>
-        </div>
-      </div>
-    </div>
-  </div>
+  <v-layout style="height: 56px">
+    <v-bottom-navigation v-model="value" :bg-color="color" mode="shift">
+      <v-btn as="router-link" to="/">
+        <v-icon>mdi-home</v-icon>
+
+        <span>Home</span>
+      </v-btn>
+
+      <v-btn as="router-link" to="/UseCode">
+        <v-icon>mdi-xml</v-icon>
+
+        <span>Code</span>
+      </v-btn>
+
+      <v-btn as="router-link" to="/UseVue">
+        <v-icon>mdi-vuejs</v-icon>
+
+        <span>Vue</span>
+      </v-btn>
+
+      <v-btn as="router-link" to="/UseNuxt">
+        <v-icon>mdi-nuxt</v-icon>
+
+        <span>Nuxt</span>
+      </v-btn>
+    </v-bottom-navigation>
+  </v-layout>
 </template>
+<script>
+export default {
+  data: () => ({ value: 1 }),
+
+  computed: {
+    color() {
+      switch (this.value) {
+        case 0:
+          return "indigo";
+        case 1:
+          return "blue";
+        case 2:
+          return "teal-accent-4";
+        case 3:
+          return "teal";
+        default:
+          return "blue-grey";
+      }
+    },
+  },
+};
+</script>

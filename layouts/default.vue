@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <UseHeader />
-      <div class="mt-[150px] sm:mx-[150px] mx-[30px]">
+      <div class="mt-[100px] sm:mx-[50px] mx-[30px]">
         <slot />
       </div>
     </v-main>
