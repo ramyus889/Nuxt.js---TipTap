@@ -6,11 +6,10 @@
 
         <span>Home</span>
       </v-btn>
+      <v-btn as="router-link" to="/UseNuxt">
+        <v-icon>mdi-nuxt</v-icon>
 
-      <v-btn as="router-link" to="/UseCode">
-        <v-icon>mdi-xml</v-icon>
-
-        <span>Code</span>
+        <span>Nuxt</span>
       </v-btn>
 
       <v-btn as="router-link" to="/UseVue">
@@ -18,11 +17,10 @@
 
         <span>Vue</span>
       </v-btn>
+      <v-btn as="router-link" to="/UseCode">
+        <v-icon>mdi-xml</v-icon>
 
-      <v-btn as="router-link" to="/UseNuxt">
-        <v-icon>mdi-nuxt</v-icon>
-
-        <span>Nuxt</span>
+        <span>Code</span>
       </v-btn>
     </v-bottom-navigation>
   </v-layout>
@@ -37,11 +35,11 @@ export default {
         case 0:
           return "indigo";
         case 1:
-          return "blue";
+          return "teal";
         case 2:
           return "teal-accent-4";
         case 3:
-          return "teal";
+          return "blue";
         default:
           return "blue-grey";
       }
