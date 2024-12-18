@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div class="">
     <v-btn>
       Nuxt
       <v-tooltip activator="parent" location="start">Tooltip</v-tooltip>
