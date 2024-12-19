@@ -1,3 +1,12 @@
+<script>
+export default {
+  name: "default",
+  mounted() {
+    document.title = "Nuxt.js - Code";
+  },
+};
+</script>
+
 <template>
   <div class="">
     <v-btn>

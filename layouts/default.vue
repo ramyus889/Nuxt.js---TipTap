@@ -1,3 +1,11 @@
+<script>
+export default {
+  name: "default",
+  mounted() {
+    document.title = "Nuxt.js";
+  },
+};
+</script>
 <template>
   <v-app>
     <v-main>
