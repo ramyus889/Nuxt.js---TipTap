@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
   ],
   css: ["./css/style.css"],
+  app: {
+    pageTransition: { name: "slide-left", mode: "out-in" },
+  },
   vuetify: {
     moduleOptions: {
       /* module specific options */
