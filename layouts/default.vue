@@ -5,6 +5,7 @@ useHead({
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { name: "description", content: "Nuxt 3" },
   ],
+  link: [{ rel: "icon", type: "image/x-icon", href: "/img/Code/frontend.jpg" }],
 });
 </script>
 <template>

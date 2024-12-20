@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: "Nuxt.js - Code",
+  link: [{ rel: "icon", type: "image/x-icon", href: "/img/Code/frontend.jpg" }],
 });
 import { ref } from "vue";
 
