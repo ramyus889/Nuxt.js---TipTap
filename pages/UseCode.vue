@@ -1,12 +1,15 @@
-<script>
-export default {
-  name: "default",
-  mounted() {
-    document.title = "Nuxt.js - Code";
-  },
+<script setup lang="ts">
+useHead({
+  title: "Nuxt.js - Code",
+});
+import { ref } from "vue";
+
+const login = ref("");
+const password = ref("");
+const loginUser = () => {
+  console.log(login.value, password.value);
 };
 </script>
-
 <template>
   <div class="">
     <v-btn>
@@ -32,13 +35,3 @@ export default {
     </v-btn>
   </div>
 </template>
-
-<script setup>
-import { ref } from "vue";
-
-const login = ref("");
-const password = ref("");
-const loginUser = () => {
-  console.log(login.value, password.value);
-};
-</script>

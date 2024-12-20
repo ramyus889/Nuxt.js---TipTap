@@ -1,10 +1,7 @@
-<script>
-export default {
-  name: "default",
-  mounted() {
-    document.title = "Nuxt.js - Nuxt";
-  },
-};
+<script setup lang="ts">
+useHead({
+  title: "Nuxt.js - Nuxt",
+});
 </script>
 
 <template>

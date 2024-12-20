@@ -26,10 +26,10 @@ function handleClick() {
     </v-btn>
     <div class="w-full">
       <div
-        class="max-w-[400px] px-5 rounded-xl transition duration-300"
+        class="max-w-[400px] rounded-xl transition duration-300"
         :style="{ backgroundColor: color }"
       >
-        <div class="flex flex-col items-center gap-5 py-5">
+        <div class="flex flex-col items-center gap-5 py-7">
           <v-img
             class="w-[300px] rounded-xl"
             src="/img/Code/frontend.jpg"
@@ -40,9 +40,13 @@ function handleClick() {
               {{ color }}
             </v-card-title>
             <v-card-text>
-              <!-- Removed paragraph text -->
+              <p class="text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatibus quidem natus eum ea dolores, quas aperiam,
+                quae
+              </p>
             </v-card-text>
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 px-7">
               <v-btn variant="outlined" size="large" rounded="lg"
                 >Learn more</v-btn
               >
