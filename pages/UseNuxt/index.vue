@@ -7,9 +7,11 @@ useHead({
 
 <template>
   <div class="">
-    <v-btn>
-      Nuxt
-      <v-tooltip activator="parent" location="start">Tooltip</v-tooltip>
-    </v-btn>
+    <DevOnly>
+      <v-btn>
+        Nuxt
+        <v-tooltip activator="parent" location="start">Tooltip</v-tooltip>
+      </v-btn>
+    </DevOnly>
   </div>
 </template>
