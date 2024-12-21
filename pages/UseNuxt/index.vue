@@ -6,10 +6,14 @@ useHead({
 </script>
 
 <template>
-  <div class="">
+  <div class="inline-flex flex-col gap-10">
+    <v-btn size="x-large" color="primary">
+      Nuxt
+      <v-tooltip activator="parent" location="start">Tooltip</v-tooltip>
+    </v-btn>
     <DevOnly>
-      <v-btn>
-        Nuxt
+      <v-btn size="x-large" color="secondary">
+        DevOnly
         <v-tooltip activator="parent" location="start">Tooltip</v-tooltip>
       </v-btn>
     </DevOnly>
