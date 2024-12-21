@@ -5,18 +5,6 @@
         <v-icon>mdi-home</v-icon>
         <span>Home</span>
       </v-btn>
-      <v-btn as="router-link" to="/UseNuxt">
-        <v-icon>mdi-nuxt</v-icon>
-        <span>Nuxt</span>
-      </v-btn>
-      <v-btn as="router-link" to="/UseVue">
-        <v-icon>mdi-vuejs</v-icon>
-        <span>Vue</span>
-      </v-btn>
-      <v-btn as="router-link" to="/UseCode">
-        <v-icon>mdi-xml</v-icon>
-        <span>Code</span>
-      </v-btn>
       <v-btn as="router-link" to="/UseCustom">
         <v-icon>mdi-cube-scan</v-icon>
         <span>Custom</span>
