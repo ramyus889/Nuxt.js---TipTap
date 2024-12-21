@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const count = useState("count", () => 0);
 
-const ready = useTimeout(3000);
+const ready = useTimeout(4000);
 </script>
 <template>
   <div class="inline-flex flex-col gap-5">
