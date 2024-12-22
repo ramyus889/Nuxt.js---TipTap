@@ -11,7 +11,7 @@ const ready = useTimeout(2000);
         size="x-large"
         :loading="!ready"
         :disabled="!ready"
-        @click="ready && counter++"
+        @click="ready && counter--"
       >
         Decrement</v-btn
       >
@@ -22,7 +22,7 @@ const ready = useTimeout(2000);
         size="x-large"
         :loading="!ready"
         :disabled="!ready"
-        @click="ready && counter--"
+        @click="ready && counter++"
       >
         Increment
       </v-btn>
