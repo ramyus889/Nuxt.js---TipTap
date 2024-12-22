@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     "vuetify-nuxt-module",
     "@vueuse/nuxt",
     "@nuxt/fonts",
-    "@nuxtjs/device",
+    "@pinia/nuxt",
   ],
   css: ["./css/style.css"],
   app: {
