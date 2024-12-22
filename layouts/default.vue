@@ -3,6 +3,7 @@ useHead({
   title: "Nuxt.js",
   meta: [
     { name: "viewport", content: "width=device-width, initial-scale=1" },
+    { name: "yandex-verification", content: "30dd311c3ef215f7" },
     { name: "description", content: "Nuxt 3 Frontend Development" },
   ],
   link: [{ rel: "icon", type: "image/x-icon", href: "/img/Code/frontend.jpg" }],
