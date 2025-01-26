@@ -9,12 +9,8 @@ useHead({
 });
 </script>
 <template>
-  <v-app>
-    <v-main>
-      <UseHeader />
-      <div class="mt-[100px] sm:mx-[50px] mx-[30px]">
-        <slot />
-      </div>
-    </v-main>
-  </v-app>
+  <UseHeader />
+  <div class="mt-[100px] ms-[100px]">
+    <slot />
+  </div>
 </template>
