@@ -14,8 +14,16 @@
           <div class="text-sm text-gray-500">#vue</div>
         </div>
         <p class="text-gray-300">
-          Vue.js — это прогрессивный фреймворк для создания пользовательских
-          интерфейсов.
+          Vue.js — это прогрессивный
+          <span
+            ><a
+              href="https://ru.vuejs.org/"
+              target="_blank"
+              class="text-blue-500 underline"
+              >фреймворк</a
+            ></span
+          >
+          для создания пользовательских интерфейсов.
         </p>
         <div class="flex flex-row-reverse gap-5 mt-5">
           <button class="border-2 px-8 py-2 rounded-xl">View</button>
