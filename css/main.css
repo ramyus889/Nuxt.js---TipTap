@@ -1,32 +1,41 @@
 @import "tailwindcss";
 
 body {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #f5f5f4;
+  color: #0d0d0d;
 }
 button {
   cursor: pointer;
 }
 
 @layer components {
-  .card {
-    @apply text-custom-color bg-custom-primary p-20 rounded-2xl font-bold;
+  .btn-head-hover {
+    @apply px-[8px] py-[8px] rounded-xl;
+  }
+  .btn-head-hover:hover {
+    @apply bg-[#d5d5d5d9]  transition-colors duration-500;
+  }
+
+  .btn-head-black {
+    @apply bg-black text-white px-[8px] py-[8px] rounded-xl;
   }
 }
 
-@theme {
+/* @theme {
   --color-custom-color: #b0514c;
   --color-custom-primary: #3651c9;
+} */
+
+/* text-[min(5vw, 1em)] */
+
+@utility flex-i-center {
+  @apply flex items-center;
 }
 
-@utility flex-center {
+@utility flex-i-j-center {
   @apply flex items-center justify-center;
 }
 
-@utility flex-start {
-  @apply flex items-start justify-start;
-}
-
-@utility flex-end {
-  @apply flex items-end justify-end;
+@utility flex-i-j-between {
+  @apply flex items-center justify-between;
 }
