@@ -1,3 +1,3 @@
 <template>
-  <div class="text-6xl">UsePractice</div>
+  <div class="text-6xl text-custom-red">UsePractice</div>
 </template>

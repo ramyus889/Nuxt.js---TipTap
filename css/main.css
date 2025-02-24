@@ -7,3 +7,26 @@ body {
 button {
   cursor: pointer;
 }
+
+@layer components {
+  .card {
+    @apply text-custom-color bg-custom-primary p-20 rounded-2xl font-bold;
+  }
+}
+
+@theme {
+  --color-custom-color: #b0514c;
+  --color-custom-primary: #3651c9;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-start {
+  @apply flex items-start justify-start;
+}
+
+@utility flex-end {
+  @apply flex items-end justify-end;
+}
