@@ -1,3 +1,6 @@
+<script setup lang="ts">
+const isOpen = ref(false);
+</script>
 <template>
   <div class="fixed top-0 left-0 w-full z-50">
     <div class="md:mx-auto sm:mx-5 sm:mt-5 mx-2 mt-2 flex-i-j-center">
@@ -6,17 +9,39 @@
       >
         <div class="flex-i-j-between gap-5">
           <div class="flex gap-5">
-            <img src="/Tiptap/tiptapLogo2.svg" class="w-[84px]" alt="" />
+            <NuxtLink to="/">
+              <img src="/Tiptap/tiptapLogo2.svg" class="w-[84px]" alt="" />
+            </NuxtLink>
             <div class="font-[400] md:flex hidden">
-              <nuxt-link to="/" class="btn-head-hover">Features</nuxt-link>
-              <nuxt-link to="/" class="btn-head-hover">Customers</nuxt-link>
-              <nuxt-link to="/" class="btn-head-hover">Enterprise</nuxt-link>
-              <nuxt-link to="/" class="btn-head-hover">Pricing</nuxt-link>
+              <NuxtLink to="/" class="btn-head-hover">Features</NuxtLink>
+              <NuxtLink to="/" class="btn-head-hover">Customers</NuxtLink>
+              <NuxtLink to="/" class="btn-head-hover">Enterprise</NuxtLink>
+              <NuxtLink to="/" class="btn-head-hover">Pricing</NuxtLink>
             </div>
           </div>
           <div class="font-[400] flex-i-center gap-1">
-            <nuxt-link to="/" class="btn-head-hover">Contact Sales</nuxt-link>
-            <nuxt-link to="/" class="btn-head-black">Sign In →</nuxt-link>
+            <NuxtLink to="/" class="btn-head-hover">Contact Sales</NuxtLink>
+            <NuxtLink to="/" class="btn-head-black">Sign In</NuxtLink>
+            <div class="">
+              <svg
+                @click="isOpen = !isOpen"
+                :class="
+                  isOpen
+                    ? 'rotate-0 transition-transform'
+                    : 'rotate-90 transition-transform'
+                "
+                class="hover:rotate-90"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M10.5 12a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5a1.5 1.5 0 0 1-1.5-1.5m0 4.5A1.5 1.5 0 0 1 12 15a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 18a1.5 1.5 0 0 1-1.5-1.5m0-9A1.5 1.5 0 0 1 12 6a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 9a1.5 1.5 0 0 1-1.5-1.5M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8a8 8 0 0 0 8 8a8 8 0 0 0 8-8a8 8 0 0 0-8-8"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
