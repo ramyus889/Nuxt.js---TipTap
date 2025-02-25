@@ -10,7 +10,7 @@ const isOpen = ref(false);
         <div class="flex-i-j-between gap-5">
           <div class="flex items-center gap-5">
             <NuxtLink to="/">
-              <img src="/Tiptap/tiptapLogo2.svg" class="w-[84px]" alt="" />
+              <img src="/tiptapLogo2.svg" class="w-[84px]" alt="" />
             </NuxtLink>
             <div class="font-[400] md:flex hidden">
               <NuxtLink to="/" class="btn-head-hover">Features</NuxtLink>
