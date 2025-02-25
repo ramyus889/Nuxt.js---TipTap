@@ -3,12 +3,12 @@ const isOpen = ref(false);
 </script>
 <template>
   <div class="fixed top-0 left-0 w-full z-50">
-    <div class="md:mx-auto sm:mx-5 sm:mt-5 mx-2 mt-2 flex-i-j-center">
+    <div class="md:mx-auto md:mt-5 mx-2 mt-2 md:flex-i-j-center">
       <div
         class="bg-white shadow-sm py-[8px] max-[768px]:w-full ps-[18px] pe-[8px] rounded-xl sm:text-[17px] text-[14px]"
       >
         <div class="flex-i-j-between gap-5">
-          <div class="flex gap-5">
+          <div class="flex items-center gap-5">
             <NuxtLink to="/">
               <img src="/Tiptap/tiptapLogo2.svg" class="w-[84px]" alt="" />
             </NuxtLink>
@@ -22,15 +22,15 @@ const isOpen = ref(false);
           <div class="font-[400] flex-i-center gap-1">
             <NuxtLink to="/" class="btn-head-hover">Contact Sales</NuxtLink>
             <NuxtLink to="/" class="btn-head-black">Sign In</NuxtLink>
-            <div class="">
+            <div class="md:hidden flex">
               <svg
                 @click="isOpen = !isOpen"
                 :class="
                   isOpen
-                    ? 'rotate-0 transition-transform'
-                    : 'rotate-90 transition-transform'
+                    ? 'rotate-90 transition-transform'
+                    : 'rotate-0 transition-transform'
                 "
-                class="hover:rotate-90"
+                class="hover:rotate-90 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
@@ -45,6 +45,13 @@ const isOpen = ref(false);
           </div>
         </div>
       </div>
+      <UseModal
+        :data-aos="isOpen ? 'flip-left' : 'flip-right'"
+        v-if="isOpen"
+        :isOpen="isOpen"
+        @close="isOpen = false"
+        class="md:hidden"
+      />
     </div>
   </div>
 </template>
