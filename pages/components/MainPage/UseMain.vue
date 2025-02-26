@@ -7,7 +7,7 @@
         The editor suite to build products with real-time
       </div>
       <div
-        class="text-center text-black font-[400] sm:text-[26px] text-[20px] leading-[36px] mt-[50px]"
+        class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
       >
         Tiptap is the headless and open source editor framework. Integrate over
         100+ extensions and paid features like collaboration and AI agents to
@@ -18,12 +18,12 @@
           <div class="flex flex-col bg-white shadow-sm p-2 rounded-3xl gap-1">
             <NuxtLink
               to="/"
-              class="bg-black hover:bg-black/80 hover:scale-[1.050] hover:translate-y-[-7px] hover:rounded-[23px] hover:rounded-bl-none hover:rounded-br-none px-6 py-2 rounded-2xl rounded-bl-lg rounded-br-lg transition-all text-center text-white font-medium cursor-pointer"
+              class="bg-black hover:bg-black/80 hover:scale-[1.050] hover:translate-y-[-7px] hover:rounded-[23px] hover:rounded-bl-none hover:rounded-br-none active:bg-black/80 active:scale-[1.050] active:translate-y-[-7px] active:rounded-[23px] active:rounded-bl-none active:rounded-br-none px-6 py-2 rounded-2xl rounded-bl-lg rounded-br-lg transition-all text-center text-white font-medium cursor-pointer"
               >Sign up free
             </NuxtLink>
             <NuxtLink
               to="/"
-              class="bg-gray-100 hover:bg-gray-300 hover:scale-[1.050] hover:translate-y-[7px] hover:rounded-[23px] hover:rounded-tl-none hover:rounded-tr-none px-6 py-2 rounded-2xl rounded-tl-lg rounded-tr-lg transition-all text-center hover:shadow-sm text-black font-medium cursor-pointer"
+              class="bg-gray-100 hover:bg-gray-300 hover:scale-[1.050] hover:translate-y-[7px] hover:rounded-[23px] hover:rounded-tl-none hover:rounded-tr-none active:bg-gray-300 active:scale-[1.050] active:translate-y-[7px] active:rounded-[23px] active:rounded-tl-none active:rounded-tr-none px-6 py-2 rounded-2xl rounded-tl-lg rounded-tr-lg transition-all text-center hover:shadow-sm text-black font-medium cursor-pointer"
             >
               Try it live
             </NuxtLink>
