@@ -4,7 +4,7 @@ const isOpen = ref(false);
 <template>
   <div class="fixed top-0 left-0 w-full z-50">
     <div class="md:mx-auto md:mt-5 mx-2 mt-2 md:flex-i-j-center">
-      <div
+      <header
         class="bg-white shadow-sm py-[8px] max-[768px]:w-full ps-[18px] pe-[8px] rounded-xl sm:text-[17px] text-[14px]"
       >
         <div class="flex-i-j-between gap-5">
@@ -67,7 +67,7 @@ const isOpen = ref(false);
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <UseModal
         :data-aos="isOpen ? 'flip-left' : 'flip-right'"
         v-if="isOpen"

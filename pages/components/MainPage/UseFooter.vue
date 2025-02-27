@@ -196,7 +196,9 @@ const items = [
               </div>
             </NuxtLink>
           </div>
-          <div class="mt-[100px] flex flex-wrap justify-center gap-25">
+          <div
+            class="mt-[100px] flex flex-wrap justify-center lg:gap-25 sm:gap-20 gap-15"
+          >
             <div v-for="item in items" :key="item.id" class="">
               <div class="font-bold">{{ item.title }}</div>
               <div class="flex flex-col">
