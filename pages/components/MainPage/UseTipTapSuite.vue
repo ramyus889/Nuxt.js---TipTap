@@ -82,59 +82,55 @@ const items = [
 </script>
 <template>
   <div class="mt-[200px]">
-    <div class="">
-      <div class="flex flex-col items-center">
-        <div class="max-w-[770px]">
-          <div class="sm:text-[26px] text-[20px] font-[400] text-center">
-            Tiptap Suite
-          </div>
-          <div
-            class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center text-black mt-[20px]"
-          >
-            Create your editor
-            <span class="font-[100] font-serif">
-              with the features you want</span
-            >
-          </div>
-          <div
-            class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
-          >
-            Tiptap's extension-based architecture puts you in control. Choose
-            from a wide range of over 100+ Core, Pro, and Cloud extensions, or
-            build and integrate your own.
-          </div>
+    <div class="flex flex-col items-center">
+      <div class="max-w-[770px]">
+        <div class="sm:text-[26px] text-[20px] font-[400] text-center">
+          Tiptap Suite
         </div>
         <div
-          class="flex flex-wrap max-w-[1300px] justify-center gap-8 mt-[120px]"
+          class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center text-black mt-[20px]"
         >
-          <div v-for="item in items" :key="item.id" class="">
-            <NuxtLink
-              to="/"
-              class="bg-white shadow-sm sm:p-[40px] p-[25px] rounded-4xl lg:w-[370px] flex flex-col justify-between h-full hover:scale-102 hover:shadow-lg active:scale-102 active:shadow-lg transition-all"
-            >
-              <div class="">
-                <Icon :name="item.icon" size="40" />
-                <div class="text-[26px] font-bold mt-[20px]">
-                  {{ item.title }}
-                </div>
-                <div class="flex gap-3">
-                  <div v-for="tag in item.tag" :key="tag.id">
-                    <div
-                      class="border border-black rounded-lg px-[4px] py-[2px] text-[12px]"
-                    >
-                      {{ tag.text }}
-                    </div>
+          Create your editor
+          <span class="font-[100] font-serif"> with the features you want</span>
+        </div>
+        <div
+          class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
+        >
+          Tiptap's extension-based architecture puts you in control. Choose from
+          a wide range of over 100+ Core, Pro, and Cloud extensions, or build
+          and integrate your own.
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap max-w-[1300px] justify-center gap-8 mt-[120px]"
+      >
+        <div v-for="item in items" :key="item.id" class="">
+          <NuxtLink
+            to="/"
+            class="bg-white shadow-sm sm:p-[40px] p-[25px] rounded-4xl lg:w-[370px] flex flex-col justify-between h-full hover:scale-102 hover:shadow-lg active:scale-102 active:shadow-lg transition-all"
+          >
+            <div class="">
+              <Icon :name="item.icon" size="40" />
+              <div class="text-[26px] font-bold mt-[20px]">
+                {{ item.title }}
+              </div>
+              <div class="flex gap-3">
+                <div v-for="tag in item.tag" :key="tag.id">
+                  <div
+                    class="border border-black rounded-lg px-[4px] py-[2px] text-[12px]"
+                  >
+                    {{ tag.text }}
                   </div>
                 </div>
-                <div class="text-[18px] mt-[20px]">
-                  {{ item.text }}
-                </div>
               </div>
-              <div class="mt-[70px]">
-                <div class="btn-head-black text-center">Learn more</div>
+              <div class="text-[18px] mt-[20px]">
+                {{ item.text }}
               </div>
-            </NuxtLink>
-          </div>
+            </div>
+            <div class="mt-[70px]">
+              <div class="btn-head-black text-center">Learn more</div>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

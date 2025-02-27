@@ -28,6 +28,7 @@ button {
 
 /* text-[min(5vw, 1em)] */
 
+/* flex */
 @utility flex-i-center {
   @apply flex items-center;
 }
@@ -38,4 +39,16 @@ button {
 
 @utility flex-i-j-between {
   @apply flex items-center justify-between;
+}
+
+@utility flex-col-center {
+  @apply flex flex-col items-center;
+}
+
+@utility flex-col-beetween {
+  @apply flex flex-col justify-between;
+}
+
+@utility flex-col-c-beetween {
+  @apply flex flex-col items-center justify-between;
 }
