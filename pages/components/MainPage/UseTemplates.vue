@@ -34,7 +34,7 @@ const items = [
 <template>
   <div class="mt-[200px]">
     <div class="flex flex-col items-center">
-      <div class="max-w-[770px]">
+      <div class="max-w-[780px]">
         <div class="sm:text-[26px] text-[20px] font-[400] text-center">
           Templates
         </div>
