@@ -10,7 +10,7 @@ useHead({
 </script>
 <template>
   <UseHeader />
-  <div class="sm:mt-[200px] mt-[150px]">
+  <div class="">
     <slot />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-i-j-center">
+  <div class="flex-i-j-center sm:mt-[200px] mt-[150px]">
     <div class="max-w-[890px]">
       <div
         class="text-[clamp(2rem,_10vw,_96px)] leading-[clamp(2rem,_10vw,_96px)] font-bold text-center text-black"
