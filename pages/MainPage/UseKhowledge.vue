@@ -63,7 +63,9 @@ const items2 = [
         </div>
       </div>
       <div class="mt-[90px]">
-        <div class="text-start">Release notes</div>
+        <div class="">
+          <div class="text-[24px] pb-[10px] sm:ps-10 ps-5">Release notes</div>
+        </div>
       </div>
       <div class="flex lg:flex-row flex-col gap-5">
         <div v-for="item in items" :key="item.id" class="">

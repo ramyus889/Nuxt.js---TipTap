@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import UseFooter from "./UseFooter.vue";
+import UseIntegrate from "./UseIntegrate.vue";
+import UseKnowCustomers from "./UseKnowCustomers.vue";
 import UseLogoCard from "./UseLogoCard.vue";
 import UseMainCustomers from "./UseMainCustomers.vue";
+import UseSuiteCustomers from "./UseSuiteCustomers.vue";
 </script>
 
 <template>
@@ -8,4 +12,8 @@ import UseMainCustomers from "./UseMainCustomers.vue";
     <UseMainCustomers />
     <UseLogoCard />
   </div>
+  <UseIntegrate />
+  <UseSuiteCustomers />
+  <UseKnowCustomers />
+  <UseFooter />
 </template>

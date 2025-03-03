@@ -17,13 +17,13 @@ export default defineNuxtConfig({
     },
   },
   css: ["./css/main.css"],
+  // app: {
+  //   pageTransition: { name: "slide-left", mode: "out-in" },
+  // },
   vite: {
     plugins: [tailwindcss()],
   },
   aos: {
     duration: 500,
   },
-  // app: {
-  //   pageTransition: { name: "slide-left", mode: "out-in" },
-  // },
 });

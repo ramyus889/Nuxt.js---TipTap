@@ -13,7 +13,6 @@ const isOpen = ref(false);
               <img src="/tiptapLogo2.svg" class="w-[84px]" alt="" />
             </NuxtLink>
             <div class="font-[400] md:flex hidden">
-              <NuxtLink to="/" class="btn-head-hover">Features</NuxtLink>
               <NuxtLink to="/CustomersPage" class="btn-head-hover"
                 >Customers</NuxtLink
               >
