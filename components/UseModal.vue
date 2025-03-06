@@ -8,7 +8,10 @@ defineEmits(["close"]);
     <NuxtLink to="/CustomersPage" class="btn-head-hover" @click="$emit('close')"
       >Customers</NuxtLink
     >
-    <NuxtLink to="/" class="btn-head-hover" @click="$emit('close')"
+    <NuxtLink
+      to="/EnterprisePage"
+      class="btn-head-hover"
+      @click="$emit('close')"
       >Enterprise</NuxtLink
     >
     <NuxtLink to="/" class="btn-head-hover" @click="$emit('close')"

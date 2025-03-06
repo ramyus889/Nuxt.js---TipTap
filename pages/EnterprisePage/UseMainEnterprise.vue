@@ -2,7 +2,7 @@
 export default {
   name: "UseMainCustomers",
   mounted() {
-    document.title = "Tiptap - Dev Toolkit Editor";
+    document.title = "Tiptap - Enterprise";
   },
 };
 </script>

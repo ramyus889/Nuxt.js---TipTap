@@ -1,3 +1,11 @@
+<script>
+export default {
+  name: "UseMainCustomers",
+  mounted() {
+    document.title = "Tiptap - Customers";
+  },
+};
+</script>
 <template>
   <div class="">
     <div class="flex-i-j-center sm:pt-[200px] pt-[150px] mx-2">
