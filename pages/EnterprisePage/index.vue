@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import UseFooter from "../CustomersPage/UseFooter.vue";
+import UseFooter from "../MainPage/UseFooter.vue";
 import UseMarquee from "../MainPage/UseMarquee.vue";
 import UseDesigned from "./UseDesigned.vue";
 import UseIndustry from "./UseIndustry.vue";

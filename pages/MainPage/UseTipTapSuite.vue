@@ -47,7 +47,6 @@ const items = [
   {
     id: 4,
     icon: "mdi:comment-edit",
-    grid: "",
     title: "Comments",
     tag: [
       {
@@ -64,7 +63,6 @@ const items = [
   {
     id: 5,
     icon: "mdi:file-document",
-    grid: "",
     title: "Content AI",
     tag: [
       {
@@ -84,16 +82,24 @@ const items = [
   <div class="mt-[200px]">
     <div class="flex flex-col items-center">
       <div class="max-w-[770px]">
-        <div class="sm:text-[26px] text-[20px] font-[400] text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="sm:text-[26px] text-[20px] font-[400] text-center"
+        >
           Tiptap Suite
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center text-black mt-[20px]"
         >
           Create your editor
           <span class="font-[100] font-serif"> with the features you want</span>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="300"
           class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
         >
           Tiptap's extension-based architecture puts you in control. Choose from
@@ -107,6 +113,8 @@ const items = [
         <div v-for="item in items" :key="item.id" class="">
           <NuxtLink
             to="/"
+            data-aos="fade-up"
+            :data-aos-delay="item.id * 100"
             class="bg-white shadow-sm sm:p-[40px] p-[25px] rounded-4xl lg:w-[370px] flex flex-col justify-between h-full hover:scale-102 hover:shadow-lg active:scale-102 active:shadow-lg transition-all"
           >
             <div class="">

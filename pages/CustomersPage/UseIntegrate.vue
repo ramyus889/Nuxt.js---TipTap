@@ -87,6 +87,8 @@ const items = [
     >
       <div class="max-w-[710px]">
         <div
+          data-aos="fade-up"
+          data-aos-delay="100"
           class="text-[clamp(2rem,_10vw,_60px)] leading-[clamp(2rem,_10vw,_60px)] font-[600] text-center"
         >
           More businesses
@@ -103,6 +105,8 @@ const items = [
             v-for="item in items"
             :key="item.id"
             :class="item.grid"
+            data-aos="fade-up"
+            :data-aos-delay="item.id * 100"
             class="bg-white py-[60px] xl:px-[53px] rounded-[30px] shadow-sm flex-i-j-center flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <img :src="item.image" alt="" class="w-[125px] h-[50px]" />

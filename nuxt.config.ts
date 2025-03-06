@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-aos",
     "nuxt-marquee",
-    '@nuxt/ui'
+    "@nuxt/ui",
   ],
   icon: {
     serverBundle: {
@@ -25,6 +25,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   aos: {
-    duration: 500,
+    duration: 600,
   },
 });

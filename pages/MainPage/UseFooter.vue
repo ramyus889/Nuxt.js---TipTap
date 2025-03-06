@@ -150,6 +150,8 @@ const items = [
       <div class="flex-i-j-center">
         <div class="max-w-[830px] text-white">
           <div
+            data-aos="fade-up"
+            data-aos-delay="100"
             class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center mt-[20px]"
           >
             Start your journey
@@ -157,7 +159,7 @@ const items = [
           </div>
 
           <div class="mt-[80px]">
-            <NuxtLink to="/">
+            <NuxtLink to="/" data-aos="fade-up" data-aos-delay="200">
               <div class="flex items-center justify-center">
                 <div class="relative group">
                   <button
@@ -200,10 +202,21 @@ const items = [
             class="mt-[100px] flex flex-wrap justify-center lg:gap-25 sm:gap-20 gap-15"
           >
             <div v-for="item in items" :key="item.id" class="">
-              <div class="font-bold">{{ item.title }}</div>
+              <div
+                data-aos="fade-up"
+                :data-aos-delay="item.id * 100"
+                class="font-bold"
+              >
+                {{ item.title }}
+              </div>
               <div class="flex flex-col">
                 <div v-for="text in item.text" :key="text.id" class="my-[7px]">
-                  <NuxtLink :to="text.link" class="text-gray-400 font-semibold">
+                  <NuxtLink
+                    data-aos="fade-up"
+                    :data-aos-delay="item.id * 100"
+                    :to="text.link"
+                    class="text-gray-400 font-semibold"
+                  >
                     {{ text.text }}
                   </NuxtLink>
                 </div>
@@ -212,6 +225,7 @@ const items = [
           </div>
           <div class="flex flex-wrap place-content-center gap-5 mt-[70px]">
             <NuxtLink to="/">© 2025 Tiptap</NuxtLink>
+
             <NuxtLink to="/" class="text-gray-400 font-semibold"
               >System status</NuxtLink
             >

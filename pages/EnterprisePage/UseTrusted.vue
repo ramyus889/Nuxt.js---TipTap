@@ -25,12 +25,16 @@ const items = [
     <div class="flex-col-center gap-[120px]">
       <div class="">
         <div
+          data-aos="fade-up"
+          data-aos-delay="100"
           class="text-[clamp(2rem,_10vw,_84px)] max-w-[910px] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center"
         >
           Your trusted partner
           <span class="font-[100] font-serif">for long-term success</span>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="text-center text-black font-[400] max-w-[910px] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
         >
           Choosing the right editor is a strategic business decision. Tiptap is
@@ -42,6 +46,8 @@ const items = [
         <div
           v-for="item in items"
           :key="item.id"
+          data-aos="fade-up"
+          :data-aos-delay="item.id * 100"
           class="flex-col-center gap-[15px] max-w-[407px] text-center"
         >
           <img :src="item.image" alt="" class="w-[30px]" />

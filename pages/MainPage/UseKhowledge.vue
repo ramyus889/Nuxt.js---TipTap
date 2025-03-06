@@ -46,16 +46,24 @@ const items2 = [
   <div class="mt-[200px]">
     <div class="flex flex-col items-center">
       <div class="max-w-[770px]">
-        <div class="sm:text-[26px] text-[20px] font-[400] text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="sm:text-[26px] text-[20px] font-[400] text-center"
+        >
           Knowledge
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center text-black mt-[20px]"
         >
           Code your editor
           <span class="font-[100] font-serif"> with everything you need</span>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="300"
           class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
         >
           Learn how to build professional editors and get guidance, insights,
@@ -71,6 +79,8 @@ const items2 = [
         <div v-for="item in items" :key="item.id" class="">
           <NuxtLink
             :to="item.to"
+            data-aos="fade-up"
+            :data-aos-delay="item.id * 100"
             class="bg-white shadow-sm group hover:rounded-4xl transition-all duration-350 pt-[20px] overflow-hidden rounded-3xl lg:max-w-[387px] flex-col-beetween gap-5 h-full"
           >
             <div class="sm:px-[30px] px-[20px]">
@@ -93,6 +103,8 @@ const items2 = [
         <div v-for="item in items2" :key="item.id" class="">
           <NuxtLink
             :to="item.to"
+            data-aos="fade-up"
+            data-aos-delay="100"
             class="flex lg:flex-row flex-col lg:items-center lg:gap-20 group hover:rounded-4xl transition-all bg-white shadow-sm lg:max-w-[1200px] max-w-[542px] rounded-3xl"
           >
             <div class="lg:ps-[40px] px-[20px] lg:py-[40px] py-[20px]">

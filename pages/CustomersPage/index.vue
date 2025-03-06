@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import UseFooter from "./UseFooter.vue";
+import UseFooter from "../MainPage/UseFooter.vue";
 import UseIntegrate from "./UseIntegrate.vue";
 import UseKnowCustomers from "./UseKnowCustomers.vue";
 import UseLogoCard from "./UseLogoCard.vue";

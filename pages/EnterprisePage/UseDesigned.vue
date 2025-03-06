@@ -30,12 +30,16 @@ const items = [
   <div class="sm:flex-i-j-center sm:mt-[200px] mt-[150px] hidden">
     <div class="max-w-[890px]">
       <div
+        data-aos="fade-up"
+        data-aos-delay="100"
         class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center"
       >
         Tiptap is designed
         <div class="font-[100] font-serif">to run on your premises</div>
       </div>
       <div
+        data-aos="fade-up"
+        data-aos-delay="200"
         class="text-center font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
       >
         For industries with strict regulations, deploying Tiptap on your own
@@ -50,11 +54,25 @@ const items = [
         >
           <template #docker="{ item }">
             <div class="flex-col-center">
-              <img :src="item.image" alt="" class="mb-[35px] mt-[80px]" />
-              <div class="text-[30px] pb-[15px] text-center">
+              <img
+                data-aos="fade-up"
+                data-aos-delay="100"
+                :src="item.image"
+                alt=""
+                class="mb-[35px] mt-[80px]"
+              />
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="text-[30px] pb-[15px] text-center"
+              >
                 {{ item.title }}
               </div>
-              <p class="text-(--ui-text-muted) text-[18px] mb-4 text-center">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="300"
+                class="text-(--ui-text-muted) text-[18px] mb-4 text-center"
+              >
                 {{ item.description }}
               </p>
             </div>
@@ -62,22 +80,51 @@ const items = [
 
           <template #deploy="{ item }">
             <div class="flex-col-center">
-              <img :src="item.image" alt="" class="mb-[35px] mt-[80px]" />
-              <div class="text-[30px] pb-[15px] text-center">
+              <img
+                data-aos="fade-up"
+                data-aos-delay="100"
+                :src="item.image"
+                alt=""
+                class="mb-[35px] mt-[80px]"
+              />
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="text-[30px] pb-[15px] text-center"
+              >
                 {{ item.title }}
               </div>
-              <p class="text-(--ui-text-muted) text-[18px] mb-4 text-center">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="300"
+                class="text-(--ui-text-muted) text-[18px] mb-4 text-center"
+              >
                 {{ item.description }}
               </p>
             </div>
           </template>
+
           <template #features="{ item }">
             <div class="flex-col-center">
-              <img :src="item.image" alt="" class="mb-[35px] mt-[80px]" />
-              <div class="text-[30px] pb-[15px] text-center">
+              <img
+                data-aos="fade-up"
+                data-aos-delay="100"
+                :src="item.image"
+                alt=""
+                class="mb-[35px] mt-[80px]"
+              />
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="text-[30px] pb-[15px] text-center"
+              >
                 {{ item.title }}
               </div>
-              <p class="text-(--ui-text-muted) text-[18px] mb-4 text-center">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="300"
+                class="text-(--ui-text-muted) text-[18px] mb-4 text-center"
+              >
                 {{ item.description }}
               </p>
             </div>

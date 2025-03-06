@@ -50,16 +50,24 @@ const items = [
   <div class="sm:mt-[100px] px-2">
     <div class="flex flex-col items-center">
       <div class="max-w-[770px]">
-        <div class="sm:text-[26px] text-[20px] font-[400] text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="sm:text-[26px] text-[20px] font-[400] text-center"
+        >
           Tiptap Suite
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center text-black mt-[20px]"
         >
           Supercharge your
           <span class="font-[100] font-serif"> content experience</span>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="300"
           class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
         >
           Essentially a headless open source editor, Tiptap has a wide range of
@@ -73,6 +81,8 @@ const items = [
         <div v-for="item in items" :key="item.id" class="">
           <NuxtLink
             to="/"
+            data-aos="fade-up"
+            :data-aos-delay="item.id * 100"
             class="bg-white shadow-sm sm:p-[40px] p-[25px] rounded-4xl lg:w-[370px] flex flex-col justify-between h-full hover:scale-102 hover:shadow-lg active:scale-102 active:shadow-lg transition-all"
           >
             <div class="">

@@ -117,6 +117,8 @@ const items = [
         v-for="item in items"
         :key="item.id"
         :class="item.col"
+        data-aos="fade-up"
+        :data-aos-delay="item.id * 50"
         class="bg-[#131111] py-[60px] xl:px-[80px] rounded-[30px] flex-i-j-center flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
       >
         <img

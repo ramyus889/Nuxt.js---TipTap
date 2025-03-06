@@ -35,16 +35,24 @@ const items = [
   <div class="mt-[200px]">
     <div class="flex flex-col items-center">
       <div class="max-w-[780px]">
-        <div class="sm:text-[26px] text-[20px] font-[400] text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="sm:text-[26px] text-[20px] font-[400] text-center"
+        >
           Templates
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="text-[clamp(2rem,_10vw,_84px)] leading-[clamp(2rem,_10vw,_84px)] font-bold text-center text-black mt-[20px]"
         >
           Set up your editor
           <span class="font-[100] font-serif"> with React templates</span>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="300"
           class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
         >
           Get to market in the fast lane with our front-end templates.
@@ -56,7 +64,11 @@ const items = [
       </div>
       <div class="mt-[80px] flex lg:flex-row flex-col lg:gap-10 gap-20">
         <div v-for="item in items" :key="item.id" class="">
-          <div class="flex-col-beetween lg:max-w-[400px] max-w-[700px] h-full">
+          <div
+            data-aos="fade-up"
+            :data-aos-delay="item.id * 100"
+            class="flex-col-beetween lg:max-w-[400px] max-w-[700px] h-full"
+          >
             <img
               :src="item.image"
               alt=""

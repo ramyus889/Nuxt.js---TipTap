@@ -7,11 +7,14 @@ onMounted(() => {
   <div class="flex-i-j-center sm:mt-[200px] mt-[150px]">
     <div class="max-w-[890px]">
       <div
+        data-aos="fade-up"
         class="text-[clamp(2rem,_10vw,_96px)] leading-[clamp(2rem,_10vw,_96px)] font-bold text-center text-black"
       >
         The editor suite to build products with real-time
       </div>
       <div
+        data-aos="fade-up"
+        data-aos-delay="100"
         class="text-center text-black font-[400] sm:text-[26px] text-[20px] sm:leading-[36px] leading-[30px] mt-[50px]"
       >
         Tiptap is the headless and open source editor framework. Integrate over
@@ -19,7 +22,7 @@ onMounted(() => {
         create the UX you want
       </div>
       <div class="flex-i-j-center gap-3 mt-[60px]">
-        <div class="sm:max-w-90 w-full">
+        <div data-aos="fade-up" data-aos-delay="200" class="sm:max-w-90 w-full">
           <div class="flex flex-col bg-white shadow-sm p-2 rounded-3xl gap-1">
             <NuxtLink
               to="/"
