@@ -22,31 +22,6 @@ const isOpen = ref(false);
             </div>
           </div>
           <div class="font-[400] flex-i-center gap-1">
-            <NuxtLink to="/" class="btn-head-hover">Contact Sales</NuxtLink>
-            <NuxtLink to="/">
-              <div class="flex items-center justify-center">
-                <div class="relative group">
-                  <button
-                    class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
-                  >
-                    <span
-                      class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    ></span>
-
-                    <span
-                      class="relative z-10 block px-2 py-2 rounded-xl bg-gray-950"
-                    >
-                      <div class="relative z-10 flex items-center space-x-2">
-                        <span
-                          class="transition-all duration-500 group-hover:translate-x-1"
-                          >Sign In</span
-                        >
-                      </div>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </NuxtLink>
             <div class="md:hidden flex">
               <svg
                 @click="isOpen = !isOpen"
