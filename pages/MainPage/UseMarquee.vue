@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="mt-[160px]">
+  <div class="mt-[100px]">
     <NuxtMarquee :speed="35" class="flex items-center gap-10">
       <img src="/ahrefs.svg" alt="" class="sm:mx-[40px] mx-[20px]" />
       <img src="/axioshq.svg" alt="" class="sm:mx-[40px] mx-[20px]" />
