@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-aos",
     "nuxt-marquee",
+    '@nuxt/ui'
   ],
   icon: {
     serverBundle: {

@@ -1,10 +1,7 @@
-<script>
-export default {
-  name: "UseMainCustomers",
-  mounted() {
-    document.title = "Tiptap - Customers";
-  },
-};
+<script setup lang="ts">
+onMounted(() => {
+  document.title = "Tiptap - Customers";
+});
 </script>
 <template>
   <div class="">

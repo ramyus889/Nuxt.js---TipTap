@@ -19,7 +19,6 @@ const isOpen = ref(false);
               <NuxtLink to="/EnterprisePage" class="btn-head-hover"
                 >Enterprise</NuxtLink
               >
-              <NuxtLink to="/" class="btn-head-hover">Pricing</NuxtLink>
             </div>
           </div>
           <div class="font-[400] flex-i-center gap-1">

@@ -1,10 +1,7 @@
-<script>
-export default {
-  name: "UseMainCustomers",
-  mounted() {
-    document.title = "Tiptap - Dev Toolkit Editor";
-  },
-};
+<script setup lang="ts">
+onMounted(() => {
+  document.title = "Tiptap - Home";
+});
 </script>
 <template>
   <div class="flex-i-j-center sm:mt-[200px] mt-[150px]">
